@@ -3,7 +3,7 @@ Through the use of Markov Models, I used a kaggle dataset of Drake lyrics to cre
 
 # How does it work
 I imported a text file of all the lyrics from Drake songs, and used my program to parse through the text file and adds each word to a string array\
-From here, I created the Markov Model method, which takes the input of one word and creates a HashMap in which all the words that follow the input word are added and the counts of the number of times they occur after the input word is the value. (Lyric after input word : Number of times it occurs after input word).\
+From here, I created the Markov Model method, which takes the input of one word and creates a HashMap in which all the words that follow the input word are added and the counts of the number of times they occur after the input word is the value.\ (Lyric after input word : Number of times it occurs after input word).\
 Through this process, I add up all the counts together to get the total number of words directly after the input word and then I traverse through the map and update each key with the percentage of how often the key occurs after the input word.\
 Finally, I generate a random percentage and I go through each key and find the closest percentage pairing to the random percentage generated.
 
